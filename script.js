@@ -68,7 +68,8 @@ async function main()
     // currentSong.src=songs[0];
     console.log(songs[0]);
     // playSong(songs[0]);
-    currentSong.src="http://127.0.0.1:5501/Songs1/ArjanVailly.mp3";
+    currentSong.src="https://maheshrayate.github.io/Spotify-Clone
+/Songs1/ArjanVaily.mp3";
     document.querySelector(".song-info").innerHTML="ArjanVaily.mp3";
     document.querySelector(".song-time").innerHTML="00:00/03:02";
 
