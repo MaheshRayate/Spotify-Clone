@@ -12,7 +12,7 @@ function formatSecondsToMinutesAndSeconds(totalSeconds) {
 
 //returns all the songs in the playlist
 async function getSongs(){
-    let a=await fetch("http://127.0.0.1:5501/Songs1/");
+    let a = await fetch("https://maheshrayate.github.io/Songs1/");
     let response = await a.text();
     // console.log(response);
     // The songs will be in the format of ul we need to parse each song
@@ -48,7 +48,7 @@ async function getSongs(){
 const playSong=(song)=>
 {
     // let audio=new Audio("/55.SPOTIFY%20CLONE/Songs1/"+song);
-    currentSong.src="/Songs1/"+song;
+    currentSong.src = "https://maheshrayate.github.io/Songs1/" + song;
     currentSong.play();
 
     play.src="pause.svg";
