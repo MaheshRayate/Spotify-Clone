@@ -1,0 +1,873 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tai+Le&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    /* overflow-x:hidden; */
+}
+body{
+    /* background-color:black; */
+    /* color:white; */
+    overflow-x:hidden;
+    overflow-y:hidden;
+
+}
+
+
+
+.cancel{
+    display:none;
+    position:absolute;
+    background-color:#121212;
+    border:none;
+    opacity:0.9;
+    cursor:pointer;
+}
+.left{
+    width:25%;
+    height:100vh;
+    /* padding-block:10px; */
+}
+
+.right{
+    width:75%;
+    height:100vh;
+    position:relative;
+    /* padding-block:10px; */
+    
+}
+
+.home{
+    padding-block:10px;
+    margin:5px;
+    border-radius:5px;
+    font-family: 'Noto Sans Tai Le', sans-serif;
+    font-weight:700;
+}
+
+.logo{
+    margin-inline:20px;
+}
+
+.logo img{
+    /* margin-inline:20px; */
+}
+
+.home ul{
+    margin-inline:20px;
+}
+
+
+.home ul li{
+    list-style:none;
+    align-items:center;
+    /* justify-content:space-evenly; */
+    /* margin-inline:20px; */
+}
+
+.home ul li img{
+    width:27px;
+}
+
+.library{
+    padding-block:10px;
+    padding-inline:30px;
+    margin:5px;
+    border-radius:5px;
+    color:white;
+    height: 69vh;
+    overflow-y:scroll;
+}
+
+.heading{
+    
+    display:flex;
+    gap:20px;
+    padding-block:10px;
+    font-family: 'Noto Sans Tai Le', sans-serif;
+    font-weight:700;
+}
+
+.library .heading img{
+    width:27px;
+    /* margin-right:20px; */
+}
+
+.library .songlist{
+
+}
+
+.songlist{
+    /* margin-inline:10px;
+    height:44vh;
+    overflow-y:scroll; */
+}
+
+.songlist ul{
+
+    list-style-type:none ;
+}
+
+.songlist ul li{
+    font-family: 'Noto Sans Tai Le', sans-serif;
+    /* font-family: 'Hind Siliguri', sans-serif; */
+    padding-block:3px;
+    display:flex;
+    align-items:center;
+    /* gap:35px; */
+    justify-content:space-between;
+    cursor:pointer;
+    border:1px solid white;
+    padding-inline:10px;
+    margin-block:8px;
+    border-radius:10px;
+    background-color:rgb(14 13 13);
+
+}
+
+.songname{
+    font-size:14px;
+    text-align:center;
+}
+
+.artist{
+    font-size:12px;
+    text-align:center;
+    font-weight:100;
+}
+
+.songlist ul li .play{
+    
+    
+    padding:5px;
+    /* border:2px solid black; */
+    /* border-radius:50%; */
+    width:30px;
+
+    /* background-color:rgb(255, 0, 217); */
+    
+    
+    
+}
+
+
+
+.library .cookies img{
+    width:15px;
+}
+
+.library .heading h2{
+    font-size:16px;
+}
+
+.cookies{
+    padding-block:10px;
+    /* position:relative;
+    top:185px;*/
+} 
+.cookies p{
+    font-family: 'Noto Sans Tai Le', sans-serif;
+    font-weight:400;
+    font-size:12px;
+    margin-bottom:40px;
+    
+}
+
+.cookies .btn{
+    color:white; 
+    font-family: 'Noto Sans Tai Le', sans-serif;
+    font-weight:700;
+    font-size:14px;  
+    padding:5px 10px;
+
+    border:1px solid white;
+    border-radius:16px;
+    display:flex;
+    align-items:center;
+}
+
+.btn img{
+    padding-right:5px;
+   
+
+}
+
+
+/*.Right*/
+.right{
+    margin-block:8px;
+    max-height:100vh;
+    
+
+
+}
+
+.right-header{
+    background-color:#121212;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 20px;
+    border-radius:5px;
+
+
+}
+
+.nav{
+    display:flex;
+}
+
+.nav-button{
+    /* background-color:white; */
+    /* border-radius:50%; */
+    padding:0px;
+    border:none;
+    /* width:20px;
+    height:20px; */
+}
+
+.nav button
+{
+    background-color:#121212;
+    /* border-radius:50%; */
+    border:none;
+    cursor:pointer;
+}
+
+.hamburger
+{
+    display:none;
+}
+
+/* .right-header .nav button img{
+    width:20px;
+    border-radius:50%; 
+} */
+
+.buttons-div{
+    display:flex;
+    /* gap:25px; */
+    justify-content:space-between;
+
+    width:20%;
+
+
+}
+
+.buttons-div button{
+    font-family:'Noto Sans Tai Le', sans-serif;
+    font-weight:700;
+    font-size:16px;
+
+}
+
+#btn-1{
+    background-color:#121212;
+    color:grey;
+    border:none;
+    cursor:pointer;
+    transition:all 0.25s;
+
+}
+
+#btn-1:hover{
+    font-weight:bold;
+    color:white;
+    /* font-size:17px; */
+}
+
+
+#btn-2{
+    border:2px solid white;
+    padding-inline:20px;
+    padding-block:10px;
+    margin-right:10px;
+    border-radius:20px;
+    cursor:pointer;
+
+    transition:all 0.25s;
+
+}
+
+#btn-2:hover{
+    padding-inline:23px;
+    background-color:rgb(235, 235, 235);
+
+
+}
+
+/*Playlist*/
+.playlist{
+    padding:10px 20px;
+    background-color:#1e1e1e;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+
+}
+
+.playlist-header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:10px;
+}
+
+.playlist-header a{
+    text-decoration: none;
+    color:white;
+    font-family:'Noto Sans Tai Le', sans-serif;
+    font-size:14px;
+
+}
+
+.playlist h1{
+    font-family:'Noto Sans Tai Le', sans-serif;
+    font-size:24px;
+    color:white
+}
+
+.playlist-card-container{
+    justify-content:space-between;
+    flex-wrap:wrap;
+    max-height:68vh;
+    overflow-y:scroll;
+}
+
+.card{
+    color:white;
+    background-color:#161616;
+    padding:15px;
+    width:15%;
+    border-radius:5px;
+
+    position:relative;
+    margin-bottom:20px;
+
+}
+
+.card:hover{
+
+
+}
+
+.card-image
+{
+    margin:auto;
+}
+
+.card-image img{
+    width:143px;
+    margin:auto;
+    border-radius:5px;
+}
+
+.card-info h2{
+    font-size:16px;
+    font-weight:700;
+    font-family:'Noto Sans Tai Le', sans-serif;
+    margin-block:10px;
+} 
+
+.card-info p{
+    font-size:14px;
+    font-weight:400;
+    font-family:'Noto Sans Tai Le', sans-serif;
+    color:grey;
+}
+
+.play-btn{
+    padding:3px;
+    background-color:#1ed760;
+    border-radius:50%;
+    height:30px;
+    width:30px;
+
+    /* display:none;   */
+    position:absolute;
+    bottom:30px;
+    right:24px;
+
+
+    opacity:0;
+    transition:all 1s;
+
+
+}
+
+
+
+.play-btn img{
+    margin:3px;
+}
+
+.playbar{
+    position:absolute;
+    background-color:#161616;
+    /* width:98%; */
+    width:calc(100% - 21px);
+    padding:14px 10px;
+    
+    margin:5px 5px 5px 0px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    /* gap:20px; */
+    border-radius:5px;
+}
+
+.playbarsvgs{
+    height:25px;
+    cursor:pointer;
+    /* background-color:white; */
+    
+}
+
+.songDisplayContainer
+{
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+}
+.song-info
+{
+    color:white;
+    /* font-family:'Noto Sans Tai Le', sans-serif; */
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size:15px;
+    padding-inline:20px;
+}
+
+.song-time
+{
+    color:white;
+    font-family:'Noto Sans Tai Le', sans-serif;
+    font-size:15px;
+    padding-inline:20px;
+}
+
+.song-buttons{
+    display:flex;
+    gap:20px;
+}
+
+.seekbar
+{
+    height:2px;
+    width:99%;
+    background-color:white;
+    border:1px solid rgb(7, 71, 7);
+    position:absolute;
+    bottom:7px;
+    margin-inline: 10px;
+    cursor:pointer;
+}
+
+.circle{
+    width:15px;
+    height:15px;
+    background-color:white;
+    border-radius:50%;
+    position:absolute;
+    top: -7px;
+    left:0%;
+
+    transition:left 0.05s;
+}
+
+
+
+
+
+/*UTILITY CLASSES*/
+.border{
+    /* border:2px solid red; */
+}
+
+.flex{
+    display:flex;
+}
+
+/*MARGIN UTILITY CLASSES*/
+
+.margin-right-20{
+    margin-right:20px;
+
+}
+
+.margin-bottom-20{
+    margin-bottom:20px;
+}
+
+/*PADDING UTILITY CLASSES*/
+
+.pad-1{
+    padding:10px;
+}
+
+.pad-bl-1{
+    padding-block:10px;
+
+}
+
+.invert{
+    filter:invert(1);
+}
+
+.bg-grey{
+    background-color:#121212;
+}
+
+.bg-black{
+    background-color:black;
+}
+
+/* Style the scrollbar track */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  /* Style the scrollbar handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: #333; /* Dark color for the scrollbar handle */
+    border-radius: 6px;
+  }
+  
+  /* Style the scrollbar track when not hovered */
+  ::-webkit-scrollbar-track {
+    background-color: #222; /* Dark color for the scrollbar track */
+  }
+  
+  /* Style the scrollbar handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Lighter color for the scrollbar handle on hover */
+  }
+  
+  /* Style the scrollbar track on hover */
+  ::-webkit-scrollbar-track:hover {
+    background-color: #444; /* Lighter color for the scrollbar track on hover */
+  }
+
+
+  /* MEDIA QUERIES */
+
+
+  @media only screen and (min-width:1001px) and (max-width:1300px)
+  {
+    *{
+        overflow-x:hidden;
+    }
+
+    .left
+    {
+        height:100vh
+    }
+
+    .right{
+        
+        height:100vh;
+    }
+    body
+    {
+        overflow-x:hidden;
+    }
+    .library{
+        padding-inline:10px;
+    }
+
+    .logo
+    {
+        margin-inline:0;
+    }
+
+    .home ul{
+        margin-inline:0;
+        
+    }
+
+    .buttons-div
+    {
+        width:40%;
+        justify-content:space-evenly;
+    }
+
+    .playlist-card-container
+    {
+        display:flex;
+        flex-wrap:wrap;
+    }
+
+    .card{
+        width:20%;
+    }
+
+    .card-image{
+        /* Visual Studio Code is an IDE for editing, compiling and executing the code. We can write code in any language like JS,HTML,CSS and also other compile based languages like c/c++/java/swift/c# */
+    }
+    .card-image img{
+        width:100%;
+    };
+
+    .songlist ul li
+    {
+        /* font-size:12px; */
+    }
+
+    .songname{
+        font-size:12px;
+    }
+
+    .playlist h1
+    {
+        font-size:20px;
+    }
+
+
+
+  }
+
+  @media only screen and (min-width:769px) and (max-width:1000px)
+  {
+    body{
+        overflow-x:hidden;
+    }
+    .left{
+        position:absolute;
+        left:-100%;
+        transition:all 0.3s;
+        z-index:1;
+        width:330px;
+        opacity:0.9;
+        background-color:black;
+        height:89vh;
+
+    }
+
+    .cancel{
+        display:block;
+        right:20px;
+        top:20px;
+    }
+
+    .right
+    {
+        width:100%;
+    }
+
+    .right-header {
+        padding:5px 20px;
+    }
+
+    .nav{
+    }
+
+    .playbar{
+        width:calc(100vw-10px);
+        overflow-x:hidden;
+        margin:10px auto;
+
+        /* margin-left:3px; */
+    }
+
+    /* .seekbar{
+        overflow-x:hidden;
+        width:95vw;
+    } */
+    .nav-button{
+        display:none;
+    }
+
+    .hamburger{
+        display:block;
+        padding:5px;
+        cursor:pointer;
+    }
+    .buttons-div{
+        width:21%;
+    }
+
+    #btn-2 {
+        margin-right:0;
+
+    }
+
+    .card{
+        width:20%;
+    }
+
+    .card-image img{
+        width:100%;
+    }
+
+    .logo
+    {
+        margin-inline:0;
+    }
+
+    .home ul{
+        margin-inline:0;
+        
+    }
+
+    .library{
+        padding-inline:10px;
+        height:64vh;
+    }
+
+  }
+
+  /* For mobile devices */
+  @media only screen and (max-width:500px)
+  {
+
+    .container{
+        height:100vh;
+    }
+
+    body{
+        overflow-y:hidden;
+    }
+    .left
+    {
+        position:absolute;
+        left:-100%;
+        z-index:1;
+        transition:all 0.9s;
+
+        width:100%;
+        opacity:0.9;
+        background-color:black;
+        height:80vh;
+    }
+
+    .library{
+        height:63vh;
+    }
+
+    .cancel{
+        display:block;
+        top:20px;
+        right:20px;
+    }
+
+    .right
+    {
+        width:100%;
+        margin-block:0;
+        height:100vh;
+        overflow-y:hidden;
+    }
+
+    .playlist{
+        height:75vh;
+    }
+
+    .playlist-card-container
+    {
+        flex-direction:column;
+        flex-wrap:nowrap;
+        /* overflow-y:auto; */
+        height:90%;
+
+    }
+
+    .card{
+        width:90%;
+    }
+
+    .card img{
+        width:90%;
+        display:block;
+        margin:0 auto;
+    }
+
+    .card-info{
+        margin:auto;
+        text-align:center;
+    }
+
+    .nav-button{
+        display:none;
+    }
+
+    .buttons-div{
+        width:40%;
+        font-size:14px;
+        justify-content: space-between;
+        /* gap:30px; */
+    }
+
+    .buttons-div button{
+        font-size:14px;
+    }
+
+    #btn-2{
+        margin-right:0px;
+        padding-inline:15px;
+        
+    }
+
+    #btn-1{
+
+    }
+
+    .song-buttons{
+        gap:20px;
+    }
+
+    .hamburger{
+        display:block;
+        border-radius:0%;
+    }
+
+    .playlist h1{
+        font-size:20px;
+    }
+
+    .playbar{
+        overflow-x:hidden;
+        width:95vw;
+        display:block;
+        padding-block:20px;
+        margin:10px auto
+    }
+
+    .seekbar{
+        width:91vw
+    }
+
+    .songDisplayContainer
+    {
+        flex-direction:column;
+        align-items:center;
+        justify-content:space-evenly;
+        gap:8px
+    }
+
+    .song-info
+    {
+        padding-inline:0px;
+        width:100%;
+        text-align:center;
+    }
+
+    .song-time
+    {  
+        width:100%;
+        padding-inline:0px;
+        text-align:center;
+    }
+  }
+
+  
+  
+
+
+
+
